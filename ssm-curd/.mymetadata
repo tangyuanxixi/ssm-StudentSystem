@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="ssm-curd"
+  id="myeclipse.1546345636174"
+  context-root="/ssm-curd"
+  j2ee-spec="6.0"
+  archive="ssm-curd.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+
