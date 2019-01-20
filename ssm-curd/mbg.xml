@@ -6,7 +6,7 @@
 <generatorConfiguration>
 
   <context id="DB2Tables" targetRuntime="MyBatis3">
-  <!--生辰没有注释的代码  -->
+  <!--生成没有注释的代码  -->
   <commentGenerator>
 			<property name="suppressAllComments" value="true" />
 		</commentGenerator>
@@ -22,7 +22,7 @@
     </javaTypeResolver>
     
 	<!--指定JavaBean生成的位置  -->
-    <javaModelGenerator targetPackage="com.atguigu.crud.bean" targetProject=".\src\main\java">
+    <javaModelGenerator targetPackage="com.attom.crud.bean" targetProject=".\src\main\java">
       <property name="enableSubPackages" value="true" />
       <property name="trimStrings" value="true" />
     </javaModelGenerator>
@@ -33,7 +33,7 @@
     </sqlMapGenerator>
 
 	<!-- 指定dao接口生成的位置，mapper接口 -->
-    <javaClientGenerator type="XMLMAPPER" targetPackage="com.atguigu.crud.dao"  targetProject=".\src\main\java">
+    <javaClientGenerator type="XMLMAPPER" targetPackage="com.attom.crud.dao"  targetProject=".\src\main\java">
       <property name="enableSubPackages" value="true" />
     </javaClientGenerator>
     

@@ -8,6 +8,7 @@
 		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
 		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<!--扫描除了控制器以为的其他包  -->
 	<context:component-scan base-package="com.atguigu">
 		<context:exclude-filter type="annotation"
 			expression="org.springframework.stereotype.Controller" />
@@ -27,8 +28,9 @@
 	<bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
 		<!-- 指定mybatis全局配置文件的位置 -->
 		<property name="configLocation" value="classpath:mybatis-config.xml"></property>
+		<!--数据源  -->
 		<property name="dataSource" ref="pooledDataSource"></property>
-		<!-- 指定mybatis，mapper文件的位置 -->
+		<!-- 指定mybatis的mapper文件的位置 -->
 		<property name="mapperLocations" value="classpath:mapper/*.xml"></property>
 	</bean>
 
